@@ -33,6 +33,11 @@ describe('config', function () {
     });
 
 
+    it('should not fail when loaded from top level directories', function () {
+        var store = configutil.create('/app');
+        assert.isObject(store);
+    });
+
 
     it('should cascade properties', function () {
         var testcase = config.get('testcase');
