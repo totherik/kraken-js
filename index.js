@@ -96,7 +96,7 @@ var proto = {
             }
 
             debug('server created');
-            server = app.get('tls') ? https.createServer(app.get('tls'), app) : http.createServer(app);
+            server = app.server = app.get('tls') ? https.createServer(app.get('tls'), app) : http.createServer(app);
             server.once('listening', resolve);
             server.once('error', reject);
             server.listen(app.get('port'), app.get('host'));
