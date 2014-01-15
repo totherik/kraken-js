@@ -17,9 +17,11 @@
     "jsonminify": "~0.2.2",
     "shush": "0.0.1",
     "caller": "0.0.1",
-    "meddleware": "git://github.com/totherik/meddleware.git",
-    "express-enrouten": "~0.1.0",
-    "lusca": "~0.1.1"
+    "meddleware": "git://github.com/paypal/meddleware.git",
+    "express-enrouten": "git://github.com/paypal/express-enrouten.git",
+    "lusca": "~0.1.1",
+    "endgame": "0.0.3",
+    "formidable": "~1.0.14"
   },
   "peerDependencies": {
     "express": "~3.4.7",

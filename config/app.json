@@ -1,9 +1,11 @@
 {
 
     "view engines": {
+        /*
         "js": {
             "module": "adaro",
-            "factoryMethod": "js",
+            "viewConstructor": null,
+            "rendererFactory": "js",
             "arguments": [{
                 "helpers": null,
                 "stream": false
@@ -11,17 +13,14 @@
         },
 
         "dust": {
-            "module": "adaro",
-            "factoryMethod": "dust",
-            "arguments": [{
-                "helpers": null,
-                "stream": false
-            }]
-        },
-
-        "html": {
             "module": "consolidate",
-            "name": "swig"
+            "name": "dust"
+        },
+        */
+        "html": {
+            "module": "ejs",
+            "name": "ejs",
+            "renderer": "renderFile"
         }
     },
 

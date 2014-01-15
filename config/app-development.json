@@ -1,7 +1,7 @@
 {
     "express": {
         "view cache": false,
-        "view engine": "dust",
+        "view engine": "html",
         "json spaces": 2,
         "views": "path:./public/templates"
     }

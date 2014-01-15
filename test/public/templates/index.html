@@ -1,0 +1,6 @@
+Hello, <%= name %>
+<form action="/upload" method="POST" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <input type="submit" value="go">
+    <input type="hidden" name="_csrf" value="<%= _csrf %>">
+</form>
